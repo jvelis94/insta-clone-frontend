@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Message(props) {
+function Comment(props) {
     return(
         <ul id='message'>
             <section>
@@ -9,11 +9,13 @@ function Message(props) {
                 </li>
             </section>
             <section>
-                <li id='username'><strong>{props.user}</strong></li>
-                <li id='message-text'>{props.message}</li>
+                <li id='username'>
+                    <strong>{props.user}</strong> 
+                    <span> {props.comment} </span>
+                </li>
             </section>
         </ul>
     )
 }
 
-export default Message;
+export default Comment;

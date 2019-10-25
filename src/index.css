@@ -11,30 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-#message {
-  list-style-type: none;
-  display: flex;
-  text-align: left;
-}
-
-#message img {
-  width: 25px;
-  margin-right: 10px;
-}
-
-#username {
-  font-size: 0.85rem;
-  font-weight: bold;
-}
-#message-text {
-  color: #ffffff;
-  background-color: #5BC9E7;
-  padding: 8px;
-  margin-top: 5px;
-  border-radius: 10px;
-}
-
-#message-input {
-  padding: 0 40px;
-}

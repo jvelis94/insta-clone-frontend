@@ -1,6 +1,6 @@
 import React from 'react'
 
-class MessageInput extends React.Component {
+class CommentInput extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -11,7 +11,7 @@ class MessageInput extends React.Component {
 
     componentDidMount() {
         this.setState({
-            username: prompt('enter username')
+            username: 'another_user'
         })
     }
 
@@ -23,7 +23,7 @@ class MessageInput extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        this.props.handleMessageSubmit(this.state.input, this.state.username)
+        this.props.handleCommentSubmit(this.state.input, this.state.username)
         this.setState({
             input: ''
         })
@@ -36,8 +36,7 @@ class MessageInput extends React.Component {
                     type='text' 
                     value={this.state.input} 
                     onChange={this.handleInput} 
-                    placeholder='enter your message here...'
-                    autoFocus={true}
+                    placeholder='enter your comment here...'
                     class='form-control'
                     id="exampleInputEmail1"
                 /> 
@@ -46,4 +45,4 @@ class MessageInput extends React.Component {
     }
 }
 
-export default MessageInput;
+export default CommentInput;
